@@ -5,7 +5,19 @@ the repository.
 
 Pathogen (installer)
 
-  git clone https://github.com/itchyny/lightline.vim ~/.vim/bundle/lightline.vim
+  To install pathogen, if they don’t exist already, create these two directories:
+
+    ~/.vim/autoload/
+    ~/.vim/bundle/
+
+  Save https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim to ~/.vim/autoload/pathogen.vim
+
+  (You don't need this step if using my vimrc file)
+  Configure pathogen in your vimrc:
+
+    execute pathogen#infect()
+    filetype plugin indent on
+    syntax on
 
 lightline.vim (ruler improved)
 
@@ -20,3 +32,16 @@ vim-gitgutter (shows a git diff in the 'gutter' (sign column))
 
   cd ~/.vim/bundle
 	git clone git://github.com/airblade/vim-gitgutter.git
+
+emmet-vim
+
+  cd ~/.vim/bundle
+  git clone https://github.com/mattn/emmet-vim.git
+
+vim-surround
+
+  This plugin was installed by downloading the zip from
+  https://github.com/tpope/vim-surround
+
+  Moving the contents of plugins and docs to its corresponding .vim plugins
+  & doc folder.
